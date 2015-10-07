@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Time</title>
+</head>
+<body>
+    <h1>Hi There, {{ person }}! </h1>
+    <p>So excited you want to play a game. Before we start, we need some information from you. 
+
+    <form action="/madlib">
+        <label>What's your favorite color? <input type="text" name="color"></label><br>
+        <label>What's your favorite noun? <input type="text" name="noun"></label><br>
+        <label>Pick an adjective.<br>
+            <select name="adjective">
+            <option value="jumpy">Jumpy</option>
+            <option value="grumpy">Grumpy</option>
+            <option value="Happy">Happy</option>
+            <option value="Sappy">Sappy</option>
+            </select>
+            <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
