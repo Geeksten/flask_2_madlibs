@@ -2,14 +2,16 @@
 <html>
 <head>
     <title>Game Time</title>
+    <link rel="stylesheet" href="madlibs.css">
+    
 </head>
 <body>
     <h1>Hi There, {{ person }}! </h1>
     <p>So excited you want to play a game. Before we start, we need some information from you. 
 
     <form action="/madlib">
-        <label>What's your favorite color? <input type="text" name="color"></label><br>
-        <label>What's your favorite noun? <input type="text" name="noun"></label><br>
+        <label>What's your favorite color? <input type="text" name="color"></label><br><br>
+        <label>What's your favorite noun? <input type="text" name="noun"></label><br><br>
         <label>Pick an adjective.<br>
             <select name="adjective">
             <option value="jumpy">Jumpy</option>
@@ -17,6 +19,17 @@
             <option value="Happy">Happy</option>
             <option value="Sappy">Sappy</option>
             </select>
+            <br>
+            <br>
+        <label>What's your favorite sport?<br>
+            <select name="sport">
+                <option value="baseball">baseball</option>
+                <option value="basketball">basketball</option>
+                <option value="soccer">soccer</option>
+                <option value="football">football</option>
+                <option value="golf">golf</option>
+            </select>
+            <br>
             <br>
         <input type="submit">
     </form>

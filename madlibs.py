@@ -10,7 +10,7 @@ app = Flask(__name__)
 # route to handle the landing page of a website.
 @app.route('/')
 def start_here():
-    return "<a href='/hello'> Hi! This is the home page.</a>"
+    return render_template("index.html")
 
 # route to display a simple web page
 @app.route('/hello')
@@ -44,9 +44,10 @@ def show_madlib():
     color_chosen = request.args.get("color")
     noun_chosen = request.args.get("noun")
     adjective_chosen = request.args.get("adjective")
+    sport_chosen = request.args.get("sport")
 
     return render_template("madlib.html", color=color_chosen, noun=noun_chosen, 
-                            adjective=adjective_chosen)
+                            adjective=adjective_chosen, sport=sport_chosen)
 
 
 if __name__ == '__main__':
